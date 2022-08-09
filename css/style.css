@@ -1,0 +1,323 @@
+/*copiamos el link y el css de la pagina google fonts*/
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+header{
+    background-color: #BBBBBB;
+    padding: 20px 0;
+}
+
+.caja{
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+nav{
+    position: absolute;
+        top:110px;
+        right:0;
+}
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+nav a{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+/*hover es la que captura el movimiento del mouse /se puede hacer con javaScript este es una manera*/
+/* text-decoration underline esa etiqueta ess para subrayar en la parte de abajo del texto*/
+nav a:hover{
+    color: #c78c19;
+    text-decoration: underline;
+}
+.productos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+.productos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    background-color: white ;
+    margin:0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    /*marcare el border*/border: 2px solid black;
+    /*redondear el cuadrado de nuestros productos*/border-radius: 10px;
+    }
+    /*es la que captura el movimiento del mouse/en la parte de productos */
+
+.productos li:hover{
+    border-color: #c78c19;
+
+}
+/*esta funcion sirve para cuando nosotros le demos click se muestre el color verde*/
+.productos li:active{
+    border-color: #088c19;
+}
+
+.productos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+/*etiqueta que cada ves que nos posicionamos agranda la letra del h2 si esta dentro de un ul ir a buscarlo ej .productos li:hover h2*/
+.productos li:hover h2{
+    font-size: 33px;
+}
+.producto-description{
+    font-size: 18px;
+}
+.producto-precio{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+/*pie de pagina.. ojo colocamos una imagen como color*/
+footer{
+    text-align: center;
+    background-image:url(../imagenes/bg.jpg);
+    padding: 40px;
+}
+/*lo que esta dentro de pie de pagina pero no relaciona con la imagen*/
+.copyright{
+    color: #ffffff;
+    font-size: 13px;
+    margin: 20px;
+}
+/* ---------------------------------------- */
+/*pagina de contacto*/
+/*nombre,apellido,correo y mensaje*/
+/*main{
+    width: 940px;
+    margin: 0 auto;
+}*/
+form{
+    margin: 40px 0;
+}
+/*como esta dentro de un from la etiqueta label y p se hace este procedimiento*/
+form label,form legend{
+    display: block;
+    font-size: 20px;
+    margin:0 0 10px;
+}
+.legend{
+    display: block;
+    font-size: 20px;
+    margin:0 0 10px;
+}
+
+/*ya no se va llamar asi porque le pusimos un class="input-patron"
+form input, form textarea{
+    display: block;
+    margin:0 0 20px;
+    padding:10px 20px;
+    width: 50%;
+}*/
+/*css para mensaje, como quiere que lo contactemos y checkbox
+podemos copiar el estilo del formulario contacto para nuestro textarea, solo colocando una coma y el nombre
+abajo el ejemplo
+*/
+/*form input, form textarea{
+    display: block;
+    margin:0 0 20px;
+    padding:10px 20px;
+    width: 50%;
+}*/
+.input-padron{
+    display: block;
+    margin: 0 0 20px;
+    padding:10px 25px;
+    width: 50%;
+}
+.checkbox{
+    margin:20px 0;
+}
+
+/*css para boton del formulario*/
+.enviar{
+    width: 40%; /*tamanio del boton*/
+    padding: 15px 0; /*le da espaciamiento interno osea un formato mas grande*/
+    font-weight: 18px; /* modifica el texto*/
+    font-weight: bold; /*que se negrita*/
+    color:white;
+    background: orange;
+    border: none;/* quitamos el border que viene por defecto*/
+    border-radius: 5px;/*le da orillas a nuestro boton*/
+    transition: 1s all;/*cambia de color cada que nos posicionamos en el boton*/
+    cursor:pointer;/*cambiar la flecha del cursor y pone la manita*/ 
+}
+.enviar:hover{
+    background-color: darkorange;
+    transform: scale(1.2);/*aumentare 1.20 cuando el mouse se posicione en el boton*/
+}
+/*css para la tabla de horario*/
+
+
+table{
+margin: 40px 40px; /*espacios externos de nuestra tabla*/
+
+}
+/*se cambio color del encabezado gris
+y se cambio el color de la letra a blanco,
+bold ase que nuestra negrita resalte
+*/
+thead{
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+/*css linea de la tabla y tamanio*/
+td,th{
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}
+
+/* --------------------css para nuestro home-------------------------------------*/
+.banner{
+    width: 100%;
+}
+
+
+/*selectores avanzados ejemplos*/
+/*
+main >p{
+    background: red;
+}
+img + p{
+    background: yellow;
+}
+img ~ p{
+    background: green;
+}
+.principal p:not(#mision){
+    background: orange;
+}
+/*
+/*--------fin selectores avanzados------*/
+
+/*ajustes en espaciado y estamos degradando el color.*/
+.principal{
+    padding: 3em 0;
+    background: #fefefe;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.titulo-principal{
+    text-align: center;
+    font-size: 2em;/*el navegador por defecto nos aumenta 15px el tamanio de texto lo que hace 2 em es multiplicar por dos osea tenemos 30px*/
+    margin:0 0 1em;/*0 superior 0 a la derecha 1em inferior */
+    clear: left;/*cualquier configuracion que venga después no me altere el texto */
+    /*color: rgba(128,0,0,0.3) si queremos opacidad en nuestro texto lo logramos con rgba y podemos variar con el ultimo elemento */
+}
+
+/*ejemplos de pseudo codigo-----------*/
+/*
+.titulo-principal.p:first-letter{
+    font-weight: bold;
+}
+.titulo-principal:before{
+    content: "[";
+}
+.titulo-principal:after{
+    content: "]";
+}
+
+p:first-line{
+    font-style: italic;
+}
+*/
+/*---------------------------------*/
+.principal p{
+    margin: 0 0 1em;
+}
+.principal strong{
+    font-weight: bold;/*peso de la fuente. tipo de letra en negrito*/
+}
+.principal em{
+    font-style: italic;/*tipo de fuente letra*/
+}
+.utensilios{
+    width: 120px;
+    float: left;/*sirve para que el elemento se destaque en la pantalla, la superficie del elemento de texto o elemento en linea se posicionan alrededor de e*/
+    margin: 0 20px 20px 0; /* arriba 0 ,derecha 20 abajo 20, izquierda 0*/
+
+}
+/* combinar colores para el degradado*/
+.mapa{
+    padding: 3em 0 ;
+    background: linear-gradient(#fefefe,#888888);
+
+
+}
+.mapa p{
+    margin:0 0 2em;
+    text-align: center;
+}
+.mapa-contenido{
+    width: 940px;
+    margin: 0 auto;
+}
+.diferenciales{
+    padding: 3em 0;
+    background: #888888;
+}
+.contenido-diferenciales{
+    width: 640px;
+    margin: 0 auto;
+}
+.lista-diferenciales{
+    width: 40%;
+    display:inline-block;
+    vertical-align: top;
+
+}
+.items{
+    line-height: 1.5;
+}
+.items::before{
+    content: "★";
+}
+/*pseudo clases poner en negrita el primero de la lista,buscar tambien la funcion nth-child y last-child*/
+.items:first-child{
+    font-weight: bold;
+}
+/*colocamos  sombra con box-shadow 10px izquierdo 10px abajo 30px difuminarían 15px es la expansion, extra poner despues del color, -10px -10px amarillo*/
+.imagen-diferencial{
+    width: 60%;
+    transition: 400ms;
+    box-shadow: 10px 10px 30px 15px #000000;
+
+}
+/*funcion de opacidad en la imagen con opacity y cada ves que ponemos el mouse lo activa*/
+.imagen-diferencial:hover{
+    opacity: 0.3;
+}
+.video{
+    width: 560px;
+    margin: 1em auto;
+}
+/* responsi tenemos que ir ajustando */
+@media screen and  (max-width:480px){
+    h1{
+        text-align: center;
+    }
+    nav{
+        position: static;
+    }
+    .caja, .principal,.mapa-contenido, .contenido-diferenciales, .video{
+        width: auto;
+    }
+    .lista-diferenciales, .imagen-diferencial{
+        width: 100%;
+
+    }
+
+
+}
