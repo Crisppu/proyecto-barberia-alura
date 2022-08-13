@@ -98,7 +98,10 @@ footer{
     margin: 0 auto;
 }*/
 form{
-    margin: 40px 0;
+    margin: 40px 200px;
+}
+.tabla{
+    margin: 40px 200px;
 }
 /*como esta dentro de un from la etiqueta label y p se hace este procedimiento*/
 form label,form legend{
